@@ -1,6 +1,5 @@
-module.exports = function (_cb) {
-
-  var args = process.argv.slice(2)
+module.exports = function (args, _cb) {
+  args || (args = process.argv.slice(2))
   var path = require('path')
   var fs = require('fs')
   var private = false
